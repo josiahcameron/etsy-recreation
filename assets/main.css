@@ -1,0 +1,15 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+img{
+    width: fit-content;
+    height: auto;
+    max-width: 3000px;
+    max-height: 2400px;
+}
+
+.cards{
+    width: 300px;
+    height: fit-content;
+}

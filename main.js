@@ -1,11 +1,20 @@
-import { data } from "./data";
+import data from "./data.js"
 
+// Retrieves template data from html
 const source = document.getElementById("card-item-template").innerHTML;
-const templateFunction = Handlebars.compile(source);
+
+// Compiles template data into a function
+const template = Handlebars.compile(source);
+
+const context = data
+
 const html = template(context);
 
-const title = data.results.title;
+document.querySelector("cards").insertAdjacentHTML("afterbegin", html)
 
-const image = data.filter(function (data) {
-  return data.results.Image;
-});
+console.log("Hello World")
+
+function generateHTML(data){
+    
+
+}

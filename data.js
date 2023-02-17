@@ -1,4 +1,4 @@
-export const data = {
+const data = {
   count: 9374,
   results: [
     {
@@ -4840,3 +4840,5 @@ export const data = {
     next_page: 2,
   },
 };
+
+export default data
